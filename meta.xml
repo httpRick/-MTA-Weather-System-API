@@ -1,0 +1,39 @@
+<meta>
+	<!--
+		################################ INFO ################################
+		Script: 		MTA weather system API
+		Author:			Rick
+	-->
+	
+	<info name="[MTA]Weather-System-API" description="MTA Weather System API" version="1.0.0" type="script" author="Rick"/>
+	<min_mta_version client="1.5.5" server="1.5.5"/>
+	<oop>true</oop>
+	
+	<!-- ################################ Scripts ################################ -->
+	
+	<!-- ### Side - Shared ### -->
+		<!-- ### Librarys ### -->
+			<!-- config -->
+			<script src="shared/config/API.lua" type="shared"/>
+			<!-- class -->
+			<script src="shared/libs/class/main.lua" type="shared"/>
+			<script src="shared/libs/class/schema/class.lua" type="shared"/>
+			<script src="shared/libs/class/schema/prototype.lua" type="shared"/>
+			<script src="shared/libs/class/schema/singletone.lua" type="shared"/>
+	
+	<!-- ### Side - Server ### -->
+		<!-- ### Manager ### -->	
+		<script src="server/manager/weather.lua" type="server"/>
+		<!-- ### Class ### -->	
+		<script src="server/classes/weather.lua" type="server"/>
+		<!-- ## Main Code ## -->	
+		<script src="server/main.lua" type="server"/>
+
+	<!-- ### Side - Client ### -->
+		<!-- ### Manager ### -->	
+		<script src="client/manager/weather.lua" type="client"/>
+		<!-- ### Class ### -->	
+		<script src="client/classes/weather.lua" type="client"/>
+		<!-- ## Main Code ## -->
+		<script src="client/main.lua" type="client"/>
+</meta>
